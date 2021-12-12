@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stress Management</title>
+</head>
+
+<h1 id='title'>Stress Management</h1>
+
+<style>
+	#title{
+		text-align: center;
+		  
+	}
+	
+	#Importance{
+     
+	 width:1200px;
+	 height:500px;
+	 margin:40px auto;
+	 border:2px solid black;
+	 background-color: lightgoldenrodyellow;
+	 overflow: hidden;
+	 text-align: center;
+	 border-radius: 15px;
+	 padding-top: 7px;
+ 
+ }
+
+ #stressArea{
+	 text-align: center;
+ }
+
+ #secondParagraph{
+	 text-align: center;
+ }
+
+
+
+
+
+
+
+</style>
+
+<body style='background-color:lightsalmon'>
+
+	<div id='Importance'>
+
+		<div id='firstParagraph'>
+				Writing down your Problems has been an effective method 
+				to relieve your stress. So write down anything or anyone that causes you stress in your life
+		</div>
+		
+		<br>
+		<br>
+
+		<textarea name="stress" id="stressArea" cols="30" rows="10">Write down what causes you Stress
+
+		</textarea>
+		<br>
+		<div class="wrapper">
+			<button type="button" onclick='saveTextAsFile()'value="save" id="save"> Save</button>    
+		</div>
+
+		<br>
+		<br>
+
+		<div id='secondParagraph'>
+		</div>
+
+		<br>
+		<br>
+
+
+		<div>
+
+		<select id='stressLevel'></select>
+		</div>
+
+
+		
+
+
+	</div>
+
+	<script src="stressManagement.js"></script>
+
+
+
+	
+		
+     
+
+
+
+
+
+	
+		
+
+	
+	
+
+
+	
+</body>
+</html>
