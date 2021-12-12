@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Thoughts </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> My Thoughts </title>
 </head>
+
 <style>
-.wrapper {
-    text-align: center;
-}
-
-.enclose{
-	text-align: center;
-	font-family: 'Times New Roman', Times, serif;
-}
-
-.button {
-    position: absolute;
-    top: 50%;
-}
-
-
-textarea.textRegion{
+  textarea.textRegion {
     resize: none;
-    background-color:white;
-    border: none;
-    height: 250px;
-    width: 1000px;
     text-align: center;
     font-size: 15px;
 	display: block;
@@ -35,57 +17,41 @@ textarea.textRegion{
     margin-right: auto;
 	border-radius:15px;
 	border:2px solid black;
-}
-
-#firstParagraph{
+  }
+  button {
+    display: block;
+    margin-left: auto;
+	margin-right: auto;
+	padding: 12px;
+	font-size: 20;
+  }
+  #firstParagraph {
 	text-align:center;
-}
-
-#stressLevel{
-text-align:center;
-
-}
-
+  }
+  #stressLevel {
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
 </style>
+
 <body style='background-color:lightsalmon'>
 
+  <h1 style="text-align:center; font-family: Arial;"> My Thoughts </h1>
 
-	<div class='enclose'>
+  <textarea id = "textArea" class='textRegion' rows='20' cols='120'text-align='center' > Write Anything </textarea>
 
-	<h1>My Thoughts</h1>
+  <br>
 
-	</div>
-	 
-	<textarea id = "textArea" class='textRegion' rows='15' 
-	cols='15'text-align='center' >
-Write Anything
+  <button onclick='saveTextAsFile()' value="save" id="save"> Save Your Text </button> 	
+
+  <div id='firstParagraph'> </div>
+
+  <br>
+
+  <select id='stressLevel'></select>
 	
-	         
-	</textarea>
-	<br>
-	<div class="wrapper">
-		<button type="button" onclick='saveTextAsFile()'value="save" id="save"> Save</button> 
+  <script src='saveButton.js'></script>
 		
-		<br>
-		<br>
-
-		<div id='firstParagraph'>
-		</div>
-
-		<br>
-		<br>
-
-	
-		<div>
-
-		<select id='stressLevel'></select>
-		</div>
-		
-		</div>
-
-	
-		<script src='saveButton.js'></script>
-		
-	
 </body>
 </html>
